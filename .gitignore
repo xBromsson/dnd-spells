@@ -1,0 +1,25 @@
+# Node.js related
+node_modules/
+package-lock.json
+
+# Operating system generated files
+.DS_Store      # Mac OS generated file
+Thumbs.db      # Windows generated file
+Desktop.ini    # Windows generated file
+
+# IDE-specific files
+.vscode/       # Visual Studio Code settings folder
+*.idea/        # IntelliJ IDEA settings folder
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Chrome extension specific
+*.pem          # Chrome extension private keys should not be shared
+*.crx          # Chrome extension packaged files
+*.zip          # If you package your extension as a zip
+
+# Other potential sensitive files
+.env           # Environment files containing secrets or configs
