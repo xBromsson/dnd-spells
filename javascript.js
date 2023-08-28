@@ -7,7 +7,7 @@ let isLoading = true;
 let spellsData = [];
 let rows = [];
 
-let search = "Acid";
+let search = "";
 
 //updates the screen
 function updateUI() {
@@ -58,10 +58,19 @@ function createTable() {
     rows.push(row);
   });
 
+  //TODO:::: FOR FILTERING AND SEARCHING IT SHOULD BE ON THIS MAP FUNCTION SO
+  //IT DOESN'T MUTATE THE ROWS ARRAY BUT INSTEAD MAPS ONLY WHAT PASSES THE FILTERS ONTO THE TABLE
   //maps each row to the table
-  rows.map((item) => {
-    table.appendChild(item);
-  });
+  rows
+    .filter((row) => {
+      return Array.from(row.childNodes).some((element) => {
+        return element.innerText.includes(search);
+      });
+    })
+    .map((item) => {
+      table.appendChild(item);
+      console.log(table);
+    });
 
   //for each row, need to create 5 cells (name, school, level, component, class )
 }
@@ -73,10 +82,16 @@ async function fetchData() {
     spellsData = await data.json();
 
     console.log(spellsData.results);
-
     isLoading = false;
     createTable();
-    console.log(rows[0].firstChild.innerHTML);
+    // console.log(
+    //   rows.forEach((row) => {
+    //     row.childNodes.forEach((element) => {
+    //       console.log(element.innerHTML);
+    //     });
+    //   })
+    // );
+
     updateUI();
   } catch (error) {
     console.error("Fetch error:", error);
