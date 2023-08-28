@@ -42,8 +42,8 @@ h1 {
 }
 
 .search-container {
-  position: sticky;
-  top: 0;
+  display: flex;
+  align-items: center;
 }
 
 input {
@@ -54,6 +54,10 @@ input {
   border-width: 0px;
   display: flex;
   align-items: flex-end;
+}
+
+.fa-magnifying-glass {
+  padding: 5px;
 }
 
 .grid-table {
