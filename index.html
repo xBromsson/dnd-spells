@@ -17,29 +17,29 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="root">
-      <div class="flex-main">
-        <div class="flex-section">
-          <h1>DND 5e Spells</h1>
+    <div class="flex-main">
+      <div class="flex-section hero">
+        <h1>DND 5e Spells</h1>
+        <div class="search-container">
           <form>
-            <label for="search">Search: </label
+            <label style="display: none" for="search">Search: </label
             ><input type="text" id="search" name="search" />
           </form>
         </div>
+      </div>
 
-        <!-- IF IS LOADING IS TRUE, SHOWS THIS -->
-        <div class="loading">LOADING...</div>
+      <!-- IF IS LOADING IS TRUE, SHOWS THIS -->
+      <div class="loading">LOADING...</div>
 
-        <!-- ELSE SHOWS -->
-        <!-- SPELL DATA TABLE - BUILT WITH FLEX -->
-        <div class="grid-table">
-          <div class="grid-row">
-            <div class="cell header">Name</div>
-            <div class="cell header">School</div>
-            <div class="cell header">Level</div>
-            <div class="cell header">Components</div>
-            <div class="cell header">Class</div>
-          </div>
+      <!-- ELSE SHOWS -->
+      <!-- SPELL DATA TABLE - BUILT WITH GRID -->
+      <div class="grid-table">
+        <div class="grid-row header">
+          <div class="cell">Name</div>
+          <div class="cell">School</div>
+          <div class="cell">Level</div>
+          <div class="cell">Components</div>
+          <div class="cell">Class</div>
         </div>
       </div>
     </div>

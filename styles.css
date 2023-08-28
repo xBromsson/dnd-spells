@@ -1,15 +1,22 @@
+:root {
+  --bg: rgb(31, 41, 49);
+  --base: rgb(22, 28, 32);
+  --base1: rgb(45, 54, 61);
+  --base2: rgb(62, 79, 95);
+
+  --fontMain: rgb(183, 197, 209);
+}
+
 body {
+  color: var(--fontMain);
+  background-color: var(--bg);
   font-family: Roboto, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   font-weight: 500;
-}
-
-.root {
-  display: flex;
-  justify-content: center;
-  background-color: blueviolet;
 }
 
 .flex-main {
@@ -18,7 +25,6 @@ h1 {
   flex-direction: column;
   align-items: center;
   max-width: 80%;
-  background-color: aqua;
   min-height: 100vh;
 }
 
@@ -29,19 +35,43 @@ h1 {
   align-items: center;
   width: 100%;
   padding: 10px 0px 10px 0px;
-  background-color: brown;
+}
+
+.hero {
+  height: 25vh;
+}
+
+.search-container {
+  position: sticky;
+  top: 0;
+}
+
+input {
+  height: 30px;
+  width: 300px;
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
+  border-width: 0px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .grid-table {
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
-  width: 75%;
-  background-color: #fff;
+  width: 100%;
 }
 
 .grid-row {
   display: grid;
   grid-template: auto / 20% 20% 20% 20% 20%;
+  margin-bottom: 5px;
+  height: 50px;
+  box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.2);
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--base2);
 }
 
 .cell {
@@ -50,7 +80,9 @@ h1 {
 }
 
 .header {
-  background-color: #ddd;
+  position: sticky;
+  top: 0;
+  background-color: var(--base);
 }
 
 .hidden {
