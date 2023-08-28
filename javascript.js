@@ -1,26 +1,31 @@
 let table = document.querySelector(".grid-table");
-let rows = document.querySelectorAll(".grid-row");
+
 let loading = document.querySelector(".loading");
 
 let isLoading = true;
 
-let spells = [];
+let spellsData = [];
+let rows = [];
 
+let search = "Acid";
+
+//updates the screen
 function updateUI() {
   if (isLoading) {
+    //shows loading element & hides the table
     loading.style.display = "static";
     table.classList.add("hidden");
   } else {
+    //hides loading element & shows table
     loading.style.display = "none";
     table.classList.remove("hidden");
-    rows = document.querySelectorAll(".grid-row");
   }
 }
 
 function createTable() {
-  //for each spell, need to create a row
-
-  spells.results.map((item) => {
+  //maps spells data into html elements and adds each row element to rows array
+  spellsData.results.map((item) => {
+    //Creates a row with child cells of name, school, level, component, class
     let row = document.createElement("div");
     row.classList.add("grid-row");
 
@@ -49,7 +54,13 @@ function createTable() {
     cellClass.innerHTML = item.dnd_class;
     row.appendChild(cellClass);
 
-    table.appendChild(row);
+    //adds the new row to rows array
+    rows.push(row);
+  });
+
+  //maps each row to the table
+  rows.map((item) => {
+    table.appendChild(item);
   });
 
   //for each row, need to create 5 cells (name, school, level, component, class )
@@ -57,19 +68,15 @@ function createTable() {
 
 async function fetchData() {
   try {
-    const data = await fetch("https://api.open5e.com/v1/spells/?limit=300");
+    const data = await fetch("https://api.open5e.com/v1/spells/?limit=20");
 
-    spells = await data.json();
+    spellsData = await data.json();
 
-    console.log(spells.results);
+    console.log(spellsData.results);
 
     isLoading = false;
-    //maps data to table
-    // spells.results.forEach((item) => {
-    //   console.log(item.name);
-    // });
     createTable();
-    console.log(rows);
+    console.log(rows[0].firstChild.innerHTML);
     updateUI();
   } catch (error) {
     console.error("Fetch error:", error);
