@@ -9,7 +9,6 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script type="module" src="./modules/setRows.js" defer></script>
     <script type="module" src="./javascript.js" defer></script>
     <title>Document</title>
   </head>
@@ -18,11 +17,16 @@
       <div class="flex-main">
         <div class="flex-section">
           <h1>Spells</h1>
+          <form>
+            <label for="search">Search: </label
+            ><input type="text" id="search" name="search" />
+          </form>
         </div>
 
-        <!-- IF IS LOADING SHOWS THIS -->
+        <!-- IF IS LOADING IS TRUE, SHOWS THIS -->
         <div class="loading">LOADING...</div>
 
+        <!-- ELSE SHOWS -->
         <!-- SPELL DATA TABLE - BUILT WITH FLEX -->
         <div class="grid-table">
           <div class="grid-row">
