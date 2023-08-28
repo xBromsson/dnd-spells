@@ -24,34 +24,16 @@
   background-color: brown;
 }
 
-.flex-table {
-  background-color: blanchedalmond;
-  display: flex;
-  width: 75%;
-  flex-direction: column;
-  align-items: center;
-}
-
-.flex-row {
-  width: 100%;
-  display: flex;
-  background-color: blue;
-}
-
-.flex-cell {
-  flex: 1;
-  background-color: blue;
-}
-
-.t-header {
-  font-weight: 500;
-}
-
 .grid-table {
-  display: grid;
-  grid-template: auto / 20% 20% 20% 20% 20%;
+  display: flex;
+  flex-direction: column;
   width: 75%;
   background-color: #fff;
+}
+
+.grid-row {
+  display: grid;
+  grid-template: auto / 20% 20% 20% 20% 20%;
 }
 
 .cell {
@@ -61,4 +43,12 @@
 
 .header {
   background-color: #ddd;
+}
+
+.hidden {
+  display: none;
+}
+
+.loading {
+  padding-top: 20px;
 }

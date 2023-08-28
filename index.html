@@ -9,7 +9,7 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./javascript.js"></script>
+    <script src="./javascript.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -19,26 +19,32 @@
           <h1>Spells</h1>
         </div>
 
+        <!-- IF IS LOADING SHOWS THIS -->
+        <div class="loading">LOADING...</div>
+
         <!-- SPELL DATA TABLE - BUILT WITH FLEX -->
         <div class="grid-table">
-          <!-- HEADERS -->
-          <div class="cell header">Name</div>
-          <div class="cell header">School</div>
-          <div class="cell header">Level</div>
-          <div class="cell header">Components</div>
-          <div class="cell header">Class</div>
-
-          <div class="cell">Fireball</div>
-          <div class="cell">Evocation</div>
-          <div class="cell">Fireball</div>
-          <div class="cell">Evocation</div>
-          <div class="cell">Fireball</div>
-
-          <div class="cell">Fireball</div>
-          <div class="cell">Evocation</div>
-          <div class="cell">Fireball</div>
-          <div class="cell">Evocation</div>
-          <div class="cell">Fireball</div>
+          <div class="grid-row">
+            <div class="cell header">Name</div>
+            <div class="cell header">School</div>
+            <div class="cell header">Level</div>
+            <div class="cell header">Components</div>
+            <div class="cell header">Class</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell">Fireball</div>
+            <div class="cell">Evocation</div>
+            <div class="cell">3</div>
+            <div class="cell">V, S, M</div>
+            <div class="cell">Wizard</div>
+          </div>
+          <div class="grid-row">
+            <div class="cell">Healing Word</div>
+            <div class="cell">Evocation</div>
+            <div class="cell">1</div>
+            <div class="cell">V</div>
+            <div class="cell">Cleric</div>
+          </div>
         </div>
       </div>
     </div>
