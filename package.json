@@ -4,7 +4,8 @@
   "description": "Simple browser based catalog of the dnd 5e spells found in the SRD.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/xBromsson/dnd-spells/issues"
   },
-  "homepage": "https://github.com/xBromsson/dnd-spells#readme"
+  "homepage": "https://github.com/xBromsson/dnd-spells#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
