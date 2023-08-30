@@ -43,7 +43,13 @@ This is a searchable list of DnD 5e spells fetched from Open5e API. :point_right
 
 #### Installation / Setup
 
+1. clone this repo to your machine:
 
+```
+git clone https://github.com/xBromsson/dnd-spells.git
+```
+
+2. use a server
 
 
 #### License
