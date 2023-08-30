@@ -2,7 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/status%3A-stable_beta-green)
 
-This is a searchable list of DnD 5e spells fetched from open5e api. :point_right: [Open5e github](https://github.com/open5e/open5e)
+This is a searchable list of DnD 5e spells fetched from Open5e API. :point_right: [Open5e github](https://github.com/open5e/open5e)
 
 #### Current Features: 
 
