@@ -33,7 +33,10 @@ This is a searchable list of DnD 5e spells fetched from Open5e API. :point_right
 
 #### Installation / Setup
 
-#### Screen Shots
+<details>
+  <summary>#### Screen Shots</summary>
+</details>
+
 
 #### License
 
