@@ -6,6 +6,12 @@ This is a searchable list of DnD 5e spells fetched from Open5e API. :point_right
 
 <details>
   <summary>Screen Shots</summary>
+
+![screenshot_1](https://github.com/xBromsson/dnd-spells/assets/73408796/48ea3e6a-d2ce-425b-a854-c5870280635c)
+
+![screenshot_2](https://github.com/xBromsson/dnd-spells/assets/73408796/038fa3d3-b528-4fb6-8baf-ee47ea2cf2ce)
+
+  
 </details>
 
 ---
