@@ -13,3 +13,16 @@ This is a searchable list of DnD 5e spells fetched from open5e api. :point_right
 #### Planned Features:
 
 - Ability to click on a spell to open single page details about that spell
+- Ability to sort columns alphabetically or numerically (ascending and descending)
+
+#### What I Used In This Project:
+
+##### Code:
+- HTML
+- JavaScript
+- CSS
+
+##### Other:
+- Fetch API
+- NPM
+- DOM
