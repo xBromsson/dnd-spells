@@ -19,7 +19,7 @@ This is a searchable list of DnD 5e spells fetched from Open5e API. :point_right
 
 ---
 
-#### What I Used In This Project:
+#### Built With:
 
 ##### Code:
 - HTML
@@ -30,3 +30,11 @@ This is a searchable list of DnD 5e spells fetched from Open5e API. :point_right
 - Fetch API
 - NPM
 - DOM
+
+#### Installation / Setup
+
+#### Screen Shots
+
+#### License
+
+#### Contributing
