@@ -4,6 +4,8 @@
 
 This is a searchable list of DnD 5e spells fetched from Open5e API. :point_right: [Open5e github](https://github.com/open5e/open5e)
 
+---
+
 #### Current Features: 
 
 - Lists all spells available in the DnD SRD. Learn more about the SRD 📑 [Here](https://dnd.wizards.com/resources/systems-reference-document)
@@ -14,6 +16,8 @@ This is a searchable list of DnD 5e spells fetched from Open5e API. :point_right
 
 - Ability to click on a spell to open single page details about that spell
 - Ability to sort columns alphabetically or numerically (ascending and descending)
+
+---
 
 #### What I Used In This Project:
 
