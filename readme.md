@@ -4,6 +4,10 @@
 
 This is a searchable list of DnD 5e spells fetched from Open5e API. :point_right: [Open5e github](https://github.com/open5e/open5e)
 
+<details>
+  <summary>Screen Shots</summary>
+</details>
+
 ---
 
 #### Current Features: 
@@ -33,9 +37,7 @@ This is a searchable list of DnD 5e spells fetched from Open5e API. :point_right
 
 #### Installation / Setup
 
-<details>
-  <summary>#### Screen Shots</summary>
-</details>
+
 
 
 #### License
